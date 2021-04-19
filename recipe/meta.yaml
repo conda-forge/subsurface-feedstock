@@ -1,5 +1,5 @@
 {% set name = "subsurface" %}
-{% set version = "0.2.0" %}
+{% set version = "0.2.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 55889e4437b54b189176db21ba9995cd588497358786e78e00f481c4bd314946
+  sha256: fd123ea8487fed73afc90f519f3c77a3aa5b59331d449e7a4973248a318f6c61
 build:
   noarch: python
   number: 0
@@ -15,13 +15,12 @@ build:
 
 requirements:
   host:
-    - python >=3.7
+    - python >=3.8
     - pip
     - setuptools_scm
   run:
-    - python >=3.7
+    - python >=3.8
     - xarray
-    - typing
 
 test:
   imports:
