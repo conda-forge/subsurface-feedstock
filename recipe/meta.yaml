@@ -1,5 +1,5 @@
 {% set name = "subsurface" %}
-{% set version = "0.2.9" %}
+{% set version = "2024.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: eb39423d033eb0f2099ba90a1720b54cf60a0f8057ed05e60f82b75842b3b773
+  sha256: e8521ddcb3915bb205b0dc659cf8c22d841a78439a36254c9e0aa3784ea6b7e9
 build:
   noarch: python
   number: 0
